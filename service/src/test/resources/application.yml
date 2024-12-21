@@ -1,0 +1,25 @@
+app:
+  version: 1.0.0
+
+server:
+  port: 8001
+
+spring:
+  application:
+    name: pay-service-test
+  jackson:
+    date-format: yyyy-MM-d HH:mm:ss
+    time-zone: GMT+8
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:6636/cloud_db_2024?characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true
+    username: root
+    password: jin123
+  cloud:
+    consul:
+      host: 127.0.0.1
+      port: 8500
+
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*.xml

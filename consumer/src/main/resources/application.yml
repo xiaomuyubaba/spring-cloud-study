@@ -1,0 +1,13 @@
+server:
+  port: 8002
+
+spring:
+  application:
+    name: order-service
+  jackson:
+    date-format: yyyy-MM-d HH:mm:ss
+    time-zone: GMT+8
+  cloud:
+    consul:
+      host: 127.0.0.1
+      port: 8500

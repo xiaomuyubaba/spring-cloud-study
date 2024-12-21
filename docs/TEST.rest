@@ -1,0 +1,38 @@
+GET http://localhost:8001/pay/get/1
+
+###
+
+GET http://localhost:8001/pay/getAll
+
+###
+
+POST http://localhost:8001/pay/add
+Content-Type: application/json
+
+{
+    "payNo": "payString3",
+    "orderNo": "dd",
+    "userId": 123,
+    "amount": "9.22"
+}
+
+###
+
+DELETE http://localhost:8001/pay/del/4
+
+###
+
+PUT http://localhost:8001/pay/update
+Content-Type: application/json
+
+{
+    "id": 3,
+    "payNo": "payString223",
+    "orderNo": "ccc",
+    "userId": 11,
+    "amount": "9.3"
+}
+
+###
+
+GET http://localhost:8002/order/get/1
