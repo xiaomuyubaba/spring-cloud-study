@@ -1,12 +1,11 @@
-package com.lijin.study.springcloud.service;
+package com.lijin.study.springcloud.service.svc;
 
-import com.lijin.study.springcloud.service.svc.PayService;
 import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class AppConfigTest {
+class PayServiceTest {
 
     @Resource
     private PayService payService;

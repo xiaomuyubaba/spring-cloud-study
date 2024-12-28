@@ -1,11 +1,10 @@
 package com.lijin.study.springcloud.service.config;
 
-import org.mybatis.spring.annotation.MapperScan;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@EnableConfigurationProperties
+@ConfigurationProperties(prefix = "app")
 public class AppConfig {
 
     private String version;
@@ -17,4 +16,5 @@ public class AppConfig {
     public void setVersion(String version) {
         this.version = version;
     }
+
 }

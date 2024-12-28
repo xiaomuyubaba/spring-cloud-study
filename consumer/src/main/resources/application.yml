@@ -11,3 +11,12 @@ spring:
     consul:
       host: 127.0.0.1
       port: 8500
+  openfeign:
+    httpclient:
+      hc5:
+        enabled: true
+    client:
+      config:
+        default:
+          connectTimeout: 3000
+          readTimeout: 3000
